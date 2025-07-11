@@ -6,24 +6,24 @@
           <img class="bg" src="@imgs/user/bg.webp" />
           <img class="avatar" src="@imgs/user/avatar.webp" />
           <h2 class="name">{{ userInfo.userName }}</h2>
-          <p class="des">Admin 是一款漂亮的后台管理系统模版.</p>
+          <p class="des">一款漂亮的后台管理系统模版.</p>
 
           <div class="outer-info">
             <div>
               <i class="iconfont-sys">&#xe72e;</i>
-              <span>jdkjjfnndf@mall.com</span>
+              <span>xxxxxxxx@gmail.com</span>
             </div>
             <div>
               <i class="iconfont-sys">&#xe608;</i>
-              <span>交互专家</span>
+              <span>菜鸟大户</span>
             </div>
             <div>
               <i class="iconfont-sys">&#xe736;</i>
-              <span>广东省深圳市</span>
+              <span>地球</span>
             </div>
             <div>
               <i class="iconfont-sys">&#xe811;</i>
-              <span>字节跳动－某某平台部－UED</span>
+              <span>宇宙空间角落</span>
             </div>
           </div>
 
@@ -160,12 +160,12 @@
   const isEditPwd = ref(false)
   const date = ref('')
   const form = reactive({
-    realName: 'John Snow',
+    realName: 'Pikachu',
     nikeName: '皮卡丘',
-    email: '59301283@mall.com',
-    mobile: '18888888888',
-    address: '广东省深圳市宝安区西乡街道101栋201',
-    sex: '2',
+    email: 'xxxxxxxx@gmall.com',
+    mobile: '18788888888',
+    address: '地球',
+    sex: '1',
     des: 'Admin 是一款漂亮的后台管理系统模版.'
   })
 
@@ -203,7 +203,7 @@
     }
   ]
 
-  const lableList: Array<string> = ['专注设计', '很有想法', '辣~', '大长腿', '川妹子', '海纳百川']
+  const lableList: Array<string> = ['专注设计', '很有想法', '辣~', '大长腿', '女装大佬', '海纳百川']
 
   onMounted(() => {
     getDate()

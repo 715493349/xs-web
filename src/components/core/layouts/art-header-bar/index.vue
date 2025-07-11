@@ -12,7 +12,7 @@
         <ArtLogo class="logo2" @click="toHome" />
 
         <!-- 菜单按钮 -->
-        <div class="btn-box" v-if="isLeftMenu && showMenuButton">
+        <div class="btn-box" v-if="(isLeftMenu || isTopLeftMenu) && showMenuButton">
           <div class="btn menu-btn">
             <i class="iconfont-sys" @click="visibleMenu">&#xe6ba;</i>
           </div>
@@ -35,21 +35,6 @@
       </div>
 
       <div class="right">
-        <!-- 搜索 -->
-        <!-- <div class="search-wrap">
-          <div class="search-input" @click="openSearchDialog">
-            <div class="left">
-              <i class="iconfont-sys">&#xe710;</i>
-              <span>{{ $t('topBar.search.title') }}</span>
-            </div>
-            <div class="search-keydown">
-              <i class="iconfont-sys" v-if="isWindows">&#xeeac;</i>
-              <i class="iconfont-sys" v-else>&#xe9ab;</i>
-              <span>k</span>
-            </div>
-          </div>
-        </div> -->
-
         <!-- 全屏按钮 -->
         <div class="btn-box screen-box" @click="toggleFullScreen">
           <div
@@ -59,20 +44,6 @@
             <i class="iconfont-sys">{{ isFullscreen ? '&#xe62d;' : '&#xe8ce;' }}</i>
           </div>
         </div>
-        <!-- 通知 -->
-        <!-- <div class="btn-box notice-btn" @click="visibleNotice">
-          <div class="btn notice-button">
-            <i class="iconfont-sys notice-btn">&#xe6c2;</i>
-            <span class="count notice-btn"></span>
-          </div>
-        </div> -->
-        <!-- 聊天 -->
-        <!-- <div class="btn-box chat-btn" @click="openChat">
-          <div class="btn chat-button">
-            <i class="iconfont-sys">&#xe89a;</i>
-            <span class="dot"></span>
-          </div>
-        </div> -->
         <!-- 语言 -->
         <div class="btn-box" v-if="showLanguage">
           <ElDropdown @command="changeLanguage" popper-class="langDropDownStyle">
@@ -133,15 +104,15 @@
             popper-style="border: 1px solid var(--art-border-dashed-color); border-radius: calc(var(--custom-radius) / 2 + 4px); padding: 5px 16px; 5px 16px;"
           >
             <template #reference>
-              <img class="cover" src="@imgs/user/tom.jpeg" alt="avatar" />
+              <img class="cover" src="@imgs/user/avatar.webp" alt="avatar" />
             </template>
             <template #default>
               <div class="user-menu-box">
                 <div class="user-head">
-                  <img class="cover" src="@imgs/user/tom.jpeg" style="float: left" />
+                  <img class="cover" src="@imgs/user/avatar.webp" style="float: left" />
                   <div class="user-wrap">
                     <span class="name">{{ userInfo.userName }}</span>
-                    <span class="email">12345678.com</span>
+                    <span class="email">xxxxxxxx@gmail.com</span>
                   </div>
                 </div>
                 <ul class="user-menu">
@@ -150,7 +121,7 @@
                     <span class="menu-txt">{{ $t('topBar.user.userCenter') }}</span>
                   </li>
                   <li @click="changePassword()">
-                    <i class="menu-icon iconfont-sys">&#xe8d7;</i>
+                    <i class="menu-icon iconfont-sys">&#xe65f;</i>
                     <span class="menu-txt">{{ $t('topBar.user.changePassword') }}</span>
                   </li>
                   <li @click="lockScreen()">
@@ -185,7 +156,6 @@
   import { useMenuStore } from '@/store/modules/menu'
   import AppConfig from '@/config'
   import { languageOptions } from '@/locales'
-  import { WEB_LINKS } from '@/utils/constants'
   import { mittBus } from '@/utils/sys'
   import { themeAnimation } from '@/utils/theme/animation'
   import { useCommon } from '@/composables/useCommon'
@@ -288,25 +258,11 @@
   }
 
   /**
-   * 打开文档页面
-   */
-  const toDocs = (): void => {
-    window.open(WEB_LINKS.DOCS)
-  }
-
-  /**
    * 跳转到修改密码页面
    */
   const changePassword = (): void => {
     // router.push('/user/change-password')
     ElMessage.success('这是修改密码的')
-  }
-
-  /**
-   * 打开 GitHub 页面
-   */
-  const toGithub = (): void => {
-    window.open(WEB_LINKS.GITHUB)
   }
 
   /**
