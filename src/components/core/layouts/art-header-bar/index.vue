@@ -140,8 +140,6 @@
       </div>
     </div>
     <ArtWorkTab />
-
-    <ArtNotification v-model:value="showNotice" ref="notice" />
   </div>
 </template>
 
@@ -190,8 +188,6 @@
   const { language, getUserInfo: userInfo } = storeToRefs(userStore)
   const { menuList } = storeToRefs(menuStore)
 
-  const showNotice = ref(false)
-  const notice = ref(null)
   const userMenuPopover = ref()
 
   // 菜单类型判断
@@ -204,12 +200,12 @@
 
   onMounted(() => {
     initLanguage()
-    document.addEventListener('click', bodyCloseNotice)
+    // document.addEventListener('click', bodyCloseNotice)
   })
 
-  onUnmounted(() => {
-    document.removeEventListener('click', bodyCloseNotice)
-  })
+  // onUnmounted(() => {
+  //   document.removeEventListener('click', bodyCloseNotice)
+  // })
 
   /**
    * 切换全屏状态
@@ -327,45 +323,6 @@
       settingStore.hideSettingGuide()
     }
   }
-
-  /**
-   * 打开全局搜索对话框
-   */
-  // const openSearchDialog = (): void => {
-  //   mittBus.emit('openSearchDialog')
-  // }
-
-  /**
-   * 点击页面其他区域关闭通知面板
-   * @param {Event} e - 点击事件对象
-   */
-  const bodyCloseNotice = (e: any): void => {
-    let { className } = e.target
-
-    if (showNotice.value) {
-      if (typeof className === 'object') {
-        showNotice.value = false
-        return
-      }
-      if (className.indexOf('notice-btn') === -1) {
-        showNotice.value = false
-      }
-    }
-  }
-
-  /**
-   * 切换通知面板显示状态
-   */
-  // const visibleNotice = (): void => {
-  //   showNotice.value = !showNotice.value
-  // }
-
-  /**
-   * 打开聊天窗口
-   */
-  // const openChat = (): void => {
-  //   mittBus.emit('openChat')
-  // }
 
   /**
    * 打开锁屏功能

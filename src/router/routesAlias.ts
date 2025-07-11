@@ -6,9 +6,9 @@ export enum RoutesAlias {
   Login = '/auth/login', // 登录
   Register = '/auth/register', // 注册
   ForgetPassword = '/auth/forget-password', // 忘记密码
-  // Exception403 = '/exception/403', // 403
-  // Exception404 = '/exception/404', // 404
-  // Exception500 = '/exception/500', // 500
+  Exception403 = '/exception/403', // 403
+  Exception404 = '/exception/404', // 404
+  Exception500 = '/exception/500', // 500
   Dashboard = '/dashboard/console', // 工作台
   Analysis = '/dashboard/analysis', // 分析页
   Ecommerce = '/dashboard/ecommerce', // 电子商务
