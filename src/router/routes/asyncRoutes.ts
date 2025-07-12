@@ -45,16 +45,6 @@ export const asyncRoutes: AppRouteRecord[] = [
           icon: '&#xe8d4;',
           keepAlive: false
         }
-      },
-      {
-        path: 'ecommerce',
-        name: 'Ecommerce',
-        component: RoutesAlias.Ecommerce,
-        meta: {
-          title: 'menus.dashboard.ecommerce',
-          icon: '&#xe7b9;',
-          keepAlive: false
-        }
       }
     ]
   },
@@ -75,67 +65,6 @@ export const asyncRoutes: AppRouteRecord[] = [
           title: 'menus.template.cards',
           icon: '&#xe860;',
           keepAlive: false
-        }
-      },
-      {
-        path: 'banners',
-        name: 'Banners',
-        component: RoutesAlias.Banners,
-        meta: {
-          title: 'menus.template.banners',
-          icon: '&#xe81a;',
-          keepAlive: false
-        }
-      },
-      {
-        path: 'charts',
-        name: 'Charts',
-        component: RoutesAlias.Charts,
-        meta: {
-          title: 'menus.template.charts',
-          icon: '&#xe8d4;',
-          keepAlive: false
-        }
-      },
-      {
-        path: 'map',
-        name: 'Map',
-        component: RoutesAlias.Map,
-        meta: {
-          title: 'menus.template.map',
-          icon: '&#xe7b9;',
-          keepAlive: true
-        }
-      },
-      {
-        path: 'chat',
-        name: 'Chat',
-        component: RoutesAlias.Chat,
-        meta: {
-          title: 'menus.template.chat',
-          icon: '&#xe721;',
-          keepAlive: true
-        }
-      },
-      {
-        path: 'calendar',
-        name: 'Calendar',
-        component: RoutesAlias.Calendar,
-        meta: {
-          title: 'menus.template.calendar',
-          icon: '&#xe860;',
-          keepAlive: true
-        }
-      },
-      {
-        path: 'pricing',
-        name: 'Pricing',
-        component: RoutesAlias.Pricing,
-        meta: {
-          title: 'menus.template.pricing',
-          icon: '&#xe81a;',
-          keepAlive: true,
-          isFullPage: true // 是否全屏显示
         }
       }
     ]
@@ -158,139 +87,6 @@ export const asyncRoutes: AppRouteRecord[] = [
           icon: '&#xe81a;',
           keepAlive: true
         }
-      },
-      {
-        path: 'icon-selector',
-        name: 'IconSelector',
-        component: RoutesAlias.IconSelector,
-        meta: {
-          title: 'menus.widgets.iconSelector',
-          icon: '&#xe860;',
-          keepAlive: true
-        }
-      },
-      {
-        path: 'image-crop',
-        name: 'ImageCrop',
-        component: RoutesAlias.ImageCrop,
-        meta: {
-          title: 'menus.widgets.imageCrop',
-          icon: '&#xe8d4;',
-          keepAlive: true
-        }
-      },
-      {
-        path: 'excel',
-        name: 'Excel',
-        component: RoutesAlias.Excel,
-        meta: {
-          title: 'menus.widgets.excel',
-          icon: '&#xe7b9;',
-          keepAlive: true
-        }
-      },
-      {
-        path: 'video',
-        name: 'Video',
-        component: RoutesAlias.Video,
-        meta: {
-          title: 'menus.widgets.video',
-          icon: '&#xe721;',
-          keepAlive: true
-        }
-      },
-      {
-        path: 'count-to',
-        name: 'CountTo',
-        component: RoutesAlias.CountTo,
-        meta: {
-          title: 'menus.widgets.countTo',
-          icon: '&#xe81a;',
-          keepAlive: false
-        }
-      },
-      {
-        path: 'wang-editor',
-        name: 'WangEditor',
-        component: RoutesAlias.WangEditor,
-        meta: {
-          title: 'menus.widgets.wangEditor',
-          icon: '&#xe860;',
-          keepAlive: true
-        }
-      },
-      {
-        path: 'watermark',
-        name: 'Watermark',
-        component: RoutesAlias.Watermark,
-        meta: {
-          title: 'menus.widgets.watermark',
-          icon: '&#xe8d4;',
-          keepAlive: true
-        }
-      },
-      {
-        path: 'context-menu',
-        name: 'ContextMenu',
-        component: RoutesAlias.ContextMenu,
-        meta: {
-          title: 'menus.widgets.contextMenu',
-          icon: '&#xe7b9;',
-          keepAlive: true
-        }
-      },
-      {
-        path: 'qrcode',
-        name: 'Qrcode',
-        component: RoutesAlias.Qrcode,
-        meta: {
-          title: 'menus.widgets.qrcode',
-          icon: '&#xe721;',
-          keepAlive: true
-        }
-      },
-      {
-        path: 'drag',
-        name: 'Drag',
-        component: RoutesAlias.Drag,
-        meta: {
-          title: 'menus.widgets.drag',
-          icon: '&#xe81a;',
-          keepAlive: true
-        }
-      },
-      {
-        path: 'text-scroll',
-        name: 'TextScroll',
-        component: RoutesAlias.TextScroll,
-        meta: {
-          title: 'menus.widgets.textScroll',
-          icon: '&#xe860;',
-          keepAlive: true
-        }
-      },
-      {
-        path: 'fireworks',
-        name: 'Fireworks',
-        component: RoutesAlias.Fireworks,
-        meta: {
-          title: 'menus.widgets.fireworks',
-          icon: '&#xe81a;',
-          keepAlive: true
-        }
-      },
-      {
-        path: '/outside/iframe/elementui',
-        name: 'ElementUI',
-        component: '',
-        meta: {
-          title: 'menus.widgets.elementUI',
-          icon: '&#xe860;',
-          keepAlive: false,
-          link: 'https://element-plus.org/zh-CN/component/overview.html',
-          isIframe: true,
-          showBadge: true
-        }
       }
     ]
   },
@@ -304,25 +100,6 @@ export const asyncRoutes: AppRouteRecord[] = [
       showBadge: true
     },
     children: [
-      {
-        path: 'tabs',
-        name: 'Tabs',
-        component: RoutesAlias.ExamplesTabs,
-        meta: {
-          title: 'menus.examples.tabs',
-          icon: '&#xe8d4;'
-        }
-      },
-      {
-        path: 'tables/basic',
-        name: 'TablesBasic',
-        component: RoutesAlias.ExamplesTablesBasic,
-        meta: {
-          title: 'menus.examples.tablesBasic',
-          icon: '&#xe7b9;',
-          keepAlive: true
-        }
-      },
       {
         path: 'tables',
         name: 'Tables',
@@ -403,94 +180,6 @@ export const asyncRoutes: AppRouteRecord[] = [
             }
           ]
         }
-      },
-      {
-        path: 'nested',
-        name: 'Nested',
-        component: '',
-        meta: {
-          title: 'menus.system.nested',
-          icon: '&#xe81a;',
-          keepAlive: true
-        },
-        children: [
-          {
-            path: 'menu1',
-            name: 'NestedMenu1',
-            component: RoutesAlias.NestedMenu1,
-            meta: {
-              title: 'menus.system.menu1',
-              icon: '&#xe676;',
-              keepAlive: true
-            }
-          },
-          {
-            path: 'menu2',
-            name: 'NestedMenu2',
-            component: '',
-            meta: {
-              title: 'menus.system.menu2',
-              icon: '&#xe676;',
-              keepAlive: true
-            },
-            children: [
-              {
-                path: 'menu2-1',
-                name: 'NestedMenu2-1',
-                component: RoutesAlias.NestedMenu21,
-                meta: {
-                  title: 'menus.system.menu21',
-                  icon: '&#xe676;',
-                  keepAlive: true
-                }
-              }
-            ]
-          },
-          {
-            path: 'menu3',
-            name: 'NestedMenu3',
-            component: '',
-            meta: {
-              title: 'menus.system.menu3',
-              icon: '&#xe676;',
-              keepAlive: true
-            },
-            children: [
-              {
-                path: 'menu3-1',
-                name: 'NestedMenu3-1',
-                component: RoutesAlias.NestedMenu31,
-                meta: {
-                  title: 'menus.system.menu31',
-                  icon: '&#xe676;',
-                  keepAlive: true
-                }
-              },
-              {
-                path: 'menu3-2',
-                name: 'NestedMenu3-2',
-                component: '',
-                meta: {
-                  title: 'menus.system.menu32',
-                  icon: '&#xe676;',
-                  keepAlive: true
-                },
-                children: [
-                  {
-                    path: 'menu3-2-1',
-                    name: 'NestedMenu3-2-1',
-                    component: RoutesAlias.NestedMenu321,
-                    meta: {
-                      title: 'menus.system.menu321',
-                      icon: '&#xe676;',
-                      keepAlive: true
-                    }
-                  }
-                ]
-              }
-            ]
-          }
-        ]
       }
     ]
   }

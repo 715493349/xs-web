@@ -4,22 +4,17 @@ import { LanguageEnum } from '@/enums/appEnum'
 import { getSystemStorage } from '@/utils/storage'
 import { StorageKeyManager } from '@/utils/storage/storage-key-manager'
 // 同步导入语言文件
-import enMessages from './langs/en.json'
 import zhMessages from './langs/zh.json'
 
 // 创建存储键管理器实例
 const storageKeyManager = new StorageKeyManager()
 
 const messages = {
-  [LanguageEnum.EN]: enMessages,
   [LanguageEnum.ZH]: zhMessages
 }
 
 // 语言选项
-export const languageOptions = [
-  { value: LanguageEnum.ZH, label: '简体中文' },
-  { value: LanguageEnum.EN, label: 'English' }
-]
+export const languageOptions = [{ value: LanguageEnum.ZH, label: '简体中文' }]
 
 /**
  * 从存储中获取语言设置

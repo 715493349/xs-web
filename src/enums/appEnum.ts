@@ -8,44 +8,43 @@ export enum MenuTypeEnum {
   DUAL_MENU = 'dual-menu'
 }
 
-// App theme enum
+// 系统主题
 export enum SystemThemeEnum {
   DARK = 'dark',
   LIGHT = 'light',
   AUTO = 'auto'
 }
 
-// Menu theme enum
+// 菜单主题
 export enum MenuThemeEnum {
   DARK = 'dark',
   LIGHT = 'light',
   DESIGN = 'design'
 }
 
-// Menu close width
+// 菜单宽度
 export enum MenuWidth {
   CLOSE = '70px'
 }
 
-// Language
+// 语言
 export enum LanguageEnum {
-  ZH = 'zh',
-  EN = 'en'
+  ZH = 'zh'
 }
 
-// Icon type
+// 图标类型
 export enum IconTypeEnum {
   CLASS_NAME = 'className',
   UNICODE = 'unicode'
 }
 
-// Container width
+// 容器宽度
 export enum ContainerWidthEnum {
   FULL = '100%',
   BOXED = '1200px'
 }
 
-// Background color enum
+// 背景颜色
 export enum BgColorEnum {
   PRIMARY = 'bg-primary',
   SECONDARY = 'bg-secondary',
