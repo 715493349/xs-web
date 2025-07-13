@@ -9,8 +9,14 @@ export enum RoutesAlias {
   Exception403 = '/exception/403', // 403
   Exception404 = '/exception/404', // 404
   Exception500 = '/exception/500', // 500
-  Dashboard = '/dashboard/console', // 工作台
-  Analysis = '/dashboard/analysis', // 分析页
+  welcome = '/home/welcome', // 首页
+  landEntering = '/business/landResource/entering', // 土地资源录入
+  landRelease = '/business/landResource/release', // 土地资源发布
+  industryEntering = '/business/industrySpaceResource/entering', // 产业资源录入
+  industryRelease = '/business/industrySpaceResource/release', // 产业资源发布
+  businessEntering = '/business/businessBuildingInput/entering', // 商业楼宇录入
+  businessRelease = '/business/businessBuildingInput/release', // 商业楼宇录入
+
   IconList = '/widgets/icon-list', // 图标列表
   Cards = '/template/cards', // 卡片
   User = '/system/user', // 账户

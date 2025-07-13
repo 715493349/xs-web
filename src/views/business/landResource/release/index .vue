@@ -1,6 +1,6 @@
 <template>
-  <div class="console">
-    <h1>工作台</h1>
+  <div>
+    <h1>土地</h1>
   </div>
 </template>
 

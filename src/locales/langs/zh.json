@@ -203,42 +203,37 @@
     "dashboard": {
       "title": "仪表盘",
       "console": "工作台",
-      "analysis": "分析页",
-      "ecommerce": "电子商务"
+      "analysis": "分析页"
+    },
+    "home": {
+      "title": "首页",
+      "welcome": "欢迎"
+    },
+    "business": {
+      "title": "业务管理",
+      "landResource": "土地资源",
+      "landResourceInput": "土地资源录入",
+      "landResourcePublish": "土地资源发布",
+      "industrySpaceResource": "产业空间资源",
+      "industrySpaceResourceInput": "产业空间资源录入",
+      "industrySpaceResourcePublish": "产业空间资源发布",
+      "businessBuildingResource": "商务楼宇资源",
+      "businessBuildingInput": "商业楼宇录入",
+      "businessBuildingPublish": "商业楼宇发布",
+      "multiSpace": "多元空间",
+      "multiSpaceInput": "多元空间录入",
+      "multiSpacePublish": "多元空间发布",
+      "otherResource": "其他资源",
+      "otherResourceInput": "其他资源录入",
+      "otherResourcePublish": "其他资源发布"
     },
     "widgets": {
       "title": "组件中心",
-      "iconList": "Icon 图标",
-      "iconSelector": "图标选择器",
-      "imageCrop": "图像裁剪",
-      "excel": "Excel 导入导出",
-      "video": "视频播放器",
-      "countTo": "数字滚动",
-      "wangEditor": "富文本编辑器",
-      "watermark": "水印",
-      "contextMenu": "右键菜单",
-      "qrcode": "二维码",
-      "drag": "拖拽",
-      "textScroll": "文字滚动",
-      "fireworks": "礼花",
-      "elementUI": "组件总览"
+      "iconList": "Icon 图标"
     },
     "template": {
       "title": "模板中心",
-      "chat": "聊天",
-      "cards": "卡片",
-      "banners": "横幅",
-      "charts": "图表",
-      "map": "地图",
-      "calendar": "日历",
-      "pricing": "定价"
-    },
-    "article": {
-      "title": "文章管理",
-      "articleList": "文章列表",
-      "articleDetail": "文章详情",
-      "comment": "留言管理",
-      "articlePublish": "文章发布"
+      "cards": "卡片"
     },
     "result": {
       "title": "结果页面",

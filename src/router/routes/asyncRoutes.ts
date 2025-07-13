@@ -16,38 +16,134 @@ import { AppRouteRecord } from '@/types/router'
  */
 export const asyncRoutes: AppRouteRecord[] = [
   {
-    name: 'Dashboard',
-    path: '/dashboard',
+    name: 'Home',
+    path: '/home',
     component: RoutesAlias.Layout,
     meta: {
-      title: 'menus.dashboard.title',
+      title: 'menus.home.title',
       icon: '&#xe721;',
       roles: ['R_SUPER', 'R_ADMIN'] // 角色权限，前端控制模式（只有拥有这些角色的用户才能访问）
     },
     children: [
       {
-        path: 'console',
-        name: 'Console',
-        component: RoutesAlias.Dashboard,
+        path: 'welcome',
+        name: 'Welcome',
+        component: RoutesAlias.welcome,
         meta: {
-          title: 'menus.dashboard.console',
+          title: 'menus.home.welcome',
           icon: '&#xe721;',
-          keepAlive: false,
-          fixedTab: true
-        }
-      },
-      {
-        path: 'analysis',
-        name: 'Analysis',
-        component: RoutesAlias.Analysis,
-        meta: {
-          title: 'menus.dashboard.analysis',
-          icon: '&#xe8d4;',
           keepAlive: false
         }
       }
     ]
   },
+
+  {
+    path: '/business',
+    name: 'Business',
+    component: RoutesAlias.Layout,
+    meta: {
+      title: 'menus.business.title',
+      icon: '&#xe721;'
+    },
+    children: [
+      {
+        path: 'landResource',
+        name: 'LandResource',
+        component: '',
+        meta: {
+          title: 'menus.business.landResource',
+          icon: '&#xe721;'
+        },
+        children: [
+          {
+            path: 'landEntering',
+            name: 'LandEntering',
+            component: RoutesAlias.landEntering,
+            meta: {
+              title: 'menus.business.landResourceInput',
+              icon: '&#xe721;',
+              keepAlive: false
+            }
+          },
+          {
+            path: 'landRelease',
+            name: 'LandRelease',
+            component: RoutesAlias.landRelease,
+            meta: {
+              title: 'menus.business.landResourcePublish',
+              icon: '&#xe721;',
+              keepAlive: false
+            }
+          }
+        ]
+      }
+      // {
+      //   path: 'industrySpaceResource',
+      //   name: 'IndustrySpaceResource',
+      //   // component: RoutesAlias.industryEntering,
+      //   meta: {
+      //     title: 'menus.business.industrySpaceResource',
+      //     icon: '&#xe721;'
+      //   },
+      //   children: [
+      //     {
+      //       path: 'industryEntering',
+      //       name: 'IndustryEntering',
+      //       component: RoutesAlias.industryEntering,
+      //       meta: {
+      //         title: 'menus.business.industrySpaceResource',
+      //         icon: '&#xe721;',
+      //         keepAlive: false
+      //       }
+      //     },
+      //     {
+      //       path: 'industryRelease',
+      //       name: 'IndustryRelease',
+      //       component: RoutesAlias.industryRelease,
+      //       meta: {
+      //         title: 'menus.business.industrySpaceResourceInput',
+      //         icon: '&#xe721;',
+      //         keepAlive: false
+      //       }
+      //     }
+      //   ]
+      // }
+    ]
+  },
+  // {
+  //   name: 'Dashboard',
+  //   path: '/dashboard',
+  //   component: RoutesAlias.Layout,
+  //   meta: {
+  //     title: 'menus.dashboard.title',
+  //     icon: '&#xe721;',
+  //     roles: ['R_SUPER', 'R_ADMIN'] // 角色权限，前端控制模式（只有拥有这些角色的用户才能访问）
+  //   },
+  //   children: [
+  //     {
+  //       path: 'console',
+  //       name: 'Console',
+  //       component: RoutesAlias.Dashboard,
+  //       meta: {
+  //         title: 'menus.dashboard.console',
+  //         icon: '&#xe721;',
+  //         keepAlive: false,
+  //         fixedTab: true
+  //       }
+  //     },
+  //     {
+  //       path: 'analysis',
+  //       name: 'Analysis',
+  //       component: RoutesAlias.Analysis,
+  //       meta: {
+  //         title: 'menus.dashboard.analysis',
+  //         icon: '&#xe8d4;',
+  //         keepAlive: false
+  //       }
+  //     }
+  //   ]
+  // },
   {
     path: '/template',
     name: 'Template',
