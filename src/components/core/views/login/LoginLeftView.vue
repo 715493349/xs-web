@@ -4,7 +4,7 @@
       <ArtLogo class="icon" />
       <h1 class="title">{{ AppConfig.systemInfo.name }}</h1>
     </div>
-    <img class="left-bg" src="@imgs/login/lf_bg.webp" />
+    <!-- <img class="left-bg" src="@imgs/login/lf_bg.webp" /> -->
     <img class="left-img" src="@imgs/login/lf_icon2.webp" />
   </div>
 </template>
@@ -21,7 +21,8 @@
     height: 100%;
     padding: 20px;
     overflow: hidden;
-    background: #f3f4fb;
+    // background: #f3f4fb;
+    background: linear-gradient(135deg, #8c6eff, #5334e0);
     background-size: cover;
 
     .logo {

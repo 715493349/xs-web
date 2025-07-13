@@ -33,7 +33,7 @@ const getDefaultLanguage = (): LanguageEnum => {
       }
     }
   } catch (error) {
-    console.warn('[i18n] 从版本化存储获取语言设置失败:', error)
+    console.warn('[i18n] 设置失败:', error)
   }
 
   // 尝试从系统存储中获取语言设置
